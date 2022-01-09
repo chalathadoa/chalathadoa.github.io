@@ -1,0 +1,12 @@
+.jumbotron {
+    padding-top: 7rem;
+    background-color: #F1DBBC;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+button {
+    float: center;
+}
