@@ -181,14 +181,22 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-                                <form action="">
+                                <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+                                    <strong>Thanks!</strong>Your message has been sent.
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <form name="Messages-from-My-Portofolio" action="">
                                     <label for="nama" class="mb-3">Name</label>
-                                    <input type="text" class="form-control mb-3" placeholder="Your Full Name" id="nama ">
+                                    <input type="text" class="form-control mb-3" placeholder="Your Full Name" id="nama " name="name">
                                     <label for="email" class="mb-3">Email</label>
-                                    <input type="text" class="form-control mb-3" placeholder="Your Email" id="email">
+                                    <input type="text" class="form-control mb-3" placeholder="Your Email" id="email" name="email">
                                     <label for="pesan" class="mb-3">Message</label>
-                                    <textarea class="form-control mb-3" cols="20" rows="5" id="pesan" placeholder="Your Message"></textarea>
-                                    <button type="submit" class="btn float-lg-none text-white" style="background-color: #392734;">Send</button>
+                                    <textarea class="form-control mb-3" cols="20" rows="5" id="pesan" placeholder="Your Message" name="message"></textarea>
+                                    <button type="submit" class="btn float-lg-none text-white btn-send" style="background-color: #392734;">Send</button>
+                                    <button class="btn text-white btn-loading d-none" type="button" style="background-color: #392734;" disabled>
+                                        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                                        Loading...
+                                    </button>
                                 </form>
                             </div>
                         </div>
@@ -216,6 +224,37 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxsl-lXNX37HG_1v0GSEMnGiA85VLIk-ZF8JSXlyFfivlTCYqDL3aMtx14ufkW4lmhy/exec';
+        const form = document.forms['Messages-from-My-Portofolio'];
+        const btnSend = document.querySelector('.btn-send');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            //when send button clicked
+            //show load button, get rid of send button
+            btnLoading.classList.toggle('d-none');
+            btnSend.classList.toggle('d-none');
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    //show send button, get rid of load button
+                    btnLoading.classList.toggle('d-none');
+                    btnSend.classList.toggle('d-none');
+                    //show alert
+                    myAlert.classList.toggle('d-none');
+                    //get rid off content
+                    form.reset();
+                    console.log('Success!', response)
+                })
+                .catch(error => console.error('Error!', error.message))
+        });
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
