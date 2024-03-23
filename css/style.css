@@ -1,0 +1,406 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* START NAVBAR */
+nav {
+    background-color: #ffffff;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border: 2px solid #000000;
+}
+
+.logo {
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    width: 80%;
+    margin-left: 1%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-right: 50px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+    border: 2px solid #000000; /* Menambahkan border */
+    border-radius: 3px;
+    display: inline-block; /* Agar border bisa menyesuaikan lebar text */
+    margin: 0 px; /* Mengompensasi border agar tidak memperlebar lebar teks */
+}
+
+.nav-links li a:hover {
+    color: #0077b6;
+}
+/* END NAVBAR */
+
+/* START COMPANY NAME */
+header {
+    text-align: center;
+    padding: 20px;
+    padding-top: 60px;
+}
+
+header h1 {
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    padding-bottom: 3%;
+}
+
+header h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 3%;
+}
+/* END COMPANY NAME */
+
+/* START REVIEW AND FORM*/
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 1%;
+}
+
+.left-content {
+    width: 60%;
+    margin-left: -10%;
+}
+.right-content {
+    width: 30%;
+    background-color: #78D5E3;
+    border-radius: 20px;
+}
+
+.right-content h3 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 200%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.right-content h5{
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+    margin-left: 12%;
+    margin-top: -5%;
+    margin-right: 12%;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom */
+    gap: 12%; /* Jarak antara elemen-elemen */
+}
+
+.review img {
+    display: block;
+    margin: 0 auto; /* Membuat gambar berada di tengah */
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar bagian kiri */
+    width: 700px; /* Menjaga proporsi gambar */
+    border-radius: 20px;
+}
+
+.review h4 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: #616161;
+    max-width: 500px;
+    text-align: left;
+    margin-left: 12%;
+}
+
+.review,
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 12%;
+}
+
+.profile-picture img {
+    max-width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+/* CSS Grid untuk menyusun nama dan umur dalam satu baris */
+.name-age {
+    display: grid;
+    grid-template-rows: auto auto; /* Membagi baris menjadi dua */
+    justify-items: center; /* Memusatkan konten di baris */
+    gap: 5px; /* Jarak antar baris */
+}
+
+.name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.age {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 12px;
+}
+
+.right-content form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.right-content form label {
+    margin-top: 10px;
+    margin-left: 0px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.right-content form input[type="text"],
+.right-content form input[type="email"],
+.right-content form select {
+    width: 85%;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    align-self: left;
+    height: 40px;
+    border: 1px solid #a5a4a4;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.right-content form select{
+    text-align: center;
+}
+
+.right-content form button{
+    width: 85%;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    align-self: left;
+    height: 40px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+/* start info */
+.info {
+    margin-top: 40px;
+    width: 60%;
+}
+
+.info h3{
+    margin-left: 5%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    max-width: 85%;
+}
+.info h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.info li img {
+    width: 50px; /* Sesuaikan ukuran gambar mini sesuai kebutuhan */
+    height: 50px;
+    margin-right: 5%;
+}
+.info li span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #616161;
+    width: 50%;
+}
+
+.info .product-name {
+    font-size: 18px;
+}
+/* end info */
+/* END REVIEW AND FORM */
+
+/* START PACKAGES */
+.our header{
+    background-color: #78D5E3;
+}
+.package {
+    margin-left: 8%;
+    margin-top: 10%;
+    margin-bottom: 100px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.package-item img {
+    max-width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 170%;
+}
+
+.place {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.desc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #616161;
+    padding-top: 30px;
+}
+/* END PACKAGES */
+
+/* START CALL TO ACTION */
+section header h5{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: -5%;
+    margin-right: 30%;
+    color: #616161;
+}
+
+.btn button {
+    background-color: #000000;
+    color: #ffffff;
+    align-items: center !important;
+    width: 30%;
+    height: 50px;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/* END CALL TO ACTION */
+
+/* START FOOTER */
+.footer h2{
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 45%;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+}
+
+.footer-bottom span {
+    margin-right: 20px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #616161;
+}
+
+.tos{
+    margin-left: 41%;
+}
+
+.tamat{
+    margin-bottom: 5%;
+}
+/* END FOOTER */
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    header {
+        padding-top: 100px; /* Menyesuaikan padding header di perangkat mobile */
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    .main-content {
+        flex-direction: column; /* Mengubah tata letak main-content menjadi satu kolom di perangkat mobile */
+    }
+
+    .left-content,
+    .right-content {
+        width: 100%; /* Mengubah lebar left-content dan right-content menjadi 100% di perangkat mobile */
+    }
+
+    .left-content {
+        margin-bottom: 50px;
+    }
+
+    .right-content form button{
+        margin-bottom: 40px;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .package-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
