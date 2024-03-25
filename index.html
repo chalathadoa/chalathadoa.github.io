@@ -17,12 +17,12 @@
             <h2 class="logo">Catventure Co.</h2>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Call Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#callus">Call Us</a></li>
         </ul>
     </nav>
-    <section class="content">
+    <section class="content" id="home">
         <header>
             <h1>Catventure Co.</h1>
             <h3>Exploring the World, One Paw at a Time</h3>
@@ -30,12 +30,12 @@
         <div class="main-content">
             <div class="left-content">
                 <div class="review">
-                    <img src="assets/egypt.jpg" alt="https://pin.it/6eKQmHU9r">
+                    <img src="assets/egypt.jpg" title="https://pin.it/6eKQmHU9r">
                     <h4>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</h4>
                     <table class="profile-info">
                         <tr>
                             <td rowspan="2" class="profile-picture">
-                                <img src="assets/hug.jpg" alt="https://pin.it/5gHUTmJZZ">
+                                <img src="assets/hug.jpg" title="https://pin.it/5gHUTmJZZ">
                             </td>
                             <td class="name">Florence Huges</td>
                         </tr>
@@ -45,10 +45,10 @@
                     </table>
                 </div>
             </div>
-            <div class="right-content">
+            <div class="right-content" id="contact">
                 <h3>Contact Us</h3>
-                <h5>Tim kami akan menghubungi anda 1x24 jam setelah data kami terima.</h5>
-                <form action="#" method="post">
+                <h5>Our team will be in touch with you after you fill this form.</h5>
+                <form action="#" name="myform" method="post" onsubmit="return validateForm()">
                     <label for="name">Your Name:</label><br>
                     <input type="text" id="name" name="name" placeholder="First and last name"><br>
                     <label for="email">Email Address:</label><br>
@@ -56,14 +56,14 @@
                     <label for="product">What are you interested in?</label><br>
                     <select id="product" name="product">
                         <option value="">---- Choose Our Product ----</option>
-                        <option value="egypt">Meow-nificent Egypt Adventure</option>
-                        <option value="paw">Paw-some Package to Paris</option>
-                        <option value="whisker">Whisker Wanderlust Tour</option>
-                        <option value="hotel">Purrfect Pet Hotel</option>
-                        <option value="cruise">Catnip Cruise</option>
-                        <option value="backpack">Kitty Commuter Backpack</option>
+                        <option value="Meow-nificent Egypt Adventure">Meow-nificent Egypt Adventure</option>
+                        <option value="Paw-some Package to Paris">Paw-some Package to Paris</option>
+                        <option value="Whisker Wanderlust Tour">Whisker Wanderlust Tour</option>
+                        <option value="Purrfect Pet Hotel">Purrfect Pet Hotel</option>
+                        <option value="Catnip Cruise">Catnip Cruise</option>
+                        <option value="Kitty Commuter Backpack">Kitty Commuter Backpack</option>
                     </select>
-                    <button type="submit">Submit</button>
+                    <input class="submit" type="submit" value="Submit">
                 </form>
             </div>
         </div>
@@ -71,21 +71,21 @@
             <h3>Use this space to provide users with more information about your offer. Consider it a followw-up to your headline and explain the benefits of your service or product</h3>
             <ul>
                 <li>
-                    <img src="assets/one.png" alt="https://www.flaticon.com/authors/riajulislam">
+                    <img src="assets/one.png" title="https://www.flaticon.com/authors/riajulislam">
                     <span class="product-name">Your first feature, written in the form of a benefit statement.</span>
                 </li>
                 <li>
-                    <img src="assets/two.png" alt="https://www.flaticon.com/authors/rashedulislam">
+                    <img src="assets/two.png" title="https://www.flaticon.com/authors/rashedulislam">
                     <span class="product-name">Your second feature, written in the form of a benefit statement.</span>
                 </li>
                 <li>
-                    <img src="assets/three.png" alt="https://www.flaticon.com/authors/shuvodas">
+                    <img src="assets/three.png" title="https://www.flaticon.com/authors/shuvodas">
                     <span class="product-name">Your third feature, written in the form of a benefit statement.</span>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="our">
+    <section class="our" id="about">
         <header>
             <h1 class="title-pack">Our Packages</h1>
         </header>
@@ -95,78 +95,78 @@
             <table class="package-item">
                 <tr>
                     <td rowspan="2" class="lamp">
-                        <img src="assets/lamp.png" alt="https://pin.it/5gHUTmJZZ">
+                        <img src="assets/egypt.png" title="https://www.flaticon.com/free-icons/egypt">
                     </td>
-                    <td class="place">Florence Huges</td>
+                    <td class="place">Meow-nificent Egypt Adventure</td>
                 </tr>
                 <tr>
-                    <td class="desc">Travel dan Wisata di bali. Kunjungi caga budaya dan kuliner yang menarik</td>
+                    <td class="desc">Set sail on a meow-nificent Egypt adventure and discover the beauty of the Egypt coastline with your cat by your side.</td>
                 </tr>
             </table>
             <table class="package-item">
                 <tr>
                     <td rowspan="2" class="lamp">
-                        <img src="assets/lamp.png" alt="https://pin.it/5gHUTmJZZ">
+                        <img src="assets/paris.png" title="https://www.flaticon.com/free-icons/france">
                     </td>
-                    <td class="place">Florence Huges</td>
+                    <td class="place">Paw Some Package to Paris</td>
                 </tr>
                 <tr>
-                    <td class="desc">Travel dan Wisata di bali. Kunjungi caga budaya dan kuliner yang menarik</td>
+                    <td class="desc">Your cat will explore iconic landmarks like the Eiffel Tower and enjoy luxurious accommodations in cat-friendly hotels</td>
                 </tr>
             </table>
             <table class="package-item">
                 <tr>
                     <td rowspan="2" class="lamp">
-                        <img src="assets/lamp.png" alt="https://pin.it/5gHUTmJZZ">
+                        <img src="assets/tour.png" title="https://www.flaticon.com/free-icons/travel">
                     </td>
-                    <td class="place">Florence Huges</td>
+                    <td class="place">Whisker Wanderlust Tour</td>
                 </tr>
                 <tr>
-                    <td class="desc">Travel dan Wisata di bali. Kunjungi caga budaya dan kuliner yang menarik</td>
+                    <td class="desc">With expert guides and cat-centric itineraries, your cat will meow with excitement as they explore new sights and sounds.</td>
                 </tr>
             </table>
             <table class="package-item">
                 <tr>
                     <td rowspan="2" class="lamp">
-                        <img src="assets/lamp.png" alt="https://pin.it/5gHUTmJZZ">
+                        <img src="assets/hotel.png" title="https://www.flaticon.com/free-icons/pets-allowed">
                     </td>
-                    <td class="place">Florence Huges</td>
+                    <td class="place">Purrfect Pet Hotel</td>
                 </tr>
                 <tr>
-                    <td class="desc">Travel dan Wisata di bali. Kunjungi caga budaya dan kuliner yang menarik</td>
+                    <td class="desc">Our boutique hotel offers spacious suites, cozy bedding, and round-the-clock concierge service to cater to your cat's every need.</td>
                 </tr>
             </table>
             <table class="package-item">
                 <tr>
                     <td rowspan="2" class="lamp">
-                        <img src="assets/lamp.png" alt="https://pin.it/5gHUTmJZZ">
+                        <img src="assets/cruise.png" title="https://www.flaticon.com/free-icons/ship">
                     </td>
-                    <td class="place">Florence Huges</td>
+                    <td class="place">Catnip Cruise</td>
                 </tr>
                 <tr>
-                    <td class="desc">Travel dan Wisata di bali. Kunjungi caga budaya dan kuliner yang menarik</td>
+                    <td class="desc">Set sail on a Catnip Cruise and embark on a nautical adventure with your cat! We're promises a tail-wagging experience for all.</td>
                 </tr>
             </table>
             <table class="package-item">
                 <tr>
                     <td rowspan="2" class="lamp">
-                        <img src="assets/lamp.png" alt="https://pin.it/5gHUTmJZZ">
+                        <img src="assets/backpack.png" title="https://www.flaticon.com/free-icons/pet-supplies">
                     </td>
-                    <td class="place">Florence Huges</td>
+                    <td class="place">Kitty Commuter Backpack</td>
                 </tr>
                 <tr>
-                    <td class="desc">Travel dan Wisata di bali. Kunjungi caga budaya dan kuliner yang menarik</td>
+                    <td class="desc">Featuring a breathable mesh design and comfortable padded straps, this backpack allows your cat to accompany you on daily adventures or weekend getaways in style. </td>
                 </tr>
             </table>
         </div>
     </section><hr>
-    <section class="cta">
+    <section class="cta" id="callus">
         <header>
-            <h1>Your Closing Argument Headline</h1>
+            <h1>Pawsitively Purr-fect Journeys Await You</h1>
             <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h5>
         </header>
         <div class="btn">
-            <button type="submit">CALL TO ACTION</button>
+            <button href="#contact" type="submit">CALL TO ACTION</button>
         </div>
     </section><hr>
     <section class="footer">
@@ -176,10 +176,12 @@
             <span>Privacy Policy</span>
         </div>
         <div class="footer-bottom">
-            <span class="tos">&copy; 2019 Catventure</span>
+            <span class="tos">&copy; 2024 Catventure</span>
             <span>All Rights Reserved</span>
         </div>
         <div class="tamat"></div>
     </section>
+    <!-- script JS -->
+    <script src="js/script.js"></script>
 </body>
 </html>

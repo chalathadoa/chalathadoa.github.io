@@ -44,9 +44,10 @@ nav {
     font-style: normal;
     padding: 5px;
     border: 2px solid #000000; /* Menambahkan border */
-    border-radius: 3px;
+    border-radius: 0%;
     display: inline-block; /* Agar border bisa menyesuaikan lebar text */
     margin: 0 px; /* Mengompensasi border agar tidak memperlebar lebar teks */
+    margin-right: -5px;
 }
 
 .nav-links li a:hover {
@@ -207,7 +208,7 @@ header h3 {
     text-align: center;
 }
 
-.right-content form button{
+.submit{
     width: 85%;
     padding: 5px;
     margin-top: 20px;
@@ -308,7 +309,7 @@ header h3 {
     font-style: normal;
     font-size: 16px;
     color: #616161;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 /* END PACKAGES */
 
@@ -364,7 +365,7 @@ section header h5{
 }
 
 .tamat{
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 /* END FOOTER */
 
@@ -392,7 +393,7 @@ section header h5{
         margin-bottom: 50px;
     }
 
-    .right-content form button{
+    .submit{
         margin-bottom: 40px;
     }
 
@@ -402,5 +403,36 @@ section header h5{
 
     .package-grid{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    section header h5{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footer h2{
+        font-family: "Caveat Brush", cursive;
+        font-weight: 400;
+        font-style: normal;
+        margin-left: 35%;
+    }
+
+    .footer-bottom{
+        text-align: center;
+    }
+    .footer-bottom span {
+        margin-right: 5px;
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #616161;
+    }
+    .tos{
+        margin-left: 5%;
+    }
+
+    .tamat{
+        margin-bottom: 10%;
     }
 }
