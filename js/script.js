@@ -1,3 +1,27 @@
+// script slides
+
+const reviews = document.querySelectorAll('.review');
+let currentSlide = 0;
+
+showSlide(currentSlide);
+
+function showSlide(currentSlide) {
+    reviews.forEach(review => {
+        review.style.display = 'none';
+    });
+    reviews[currentSlide].style.display = 'block';
+}
+
+function autoSlide() {
+    currentSlide++;
+    if (currentSlide >= reviews.length) {
+        currentSlide = 0;
+    }
+    showSlide(currentSlide);
+}
+setInterval(autoSlide, 3000);
+
+// script validasi
 function validateForm(){
     const name = document.forms['myform']['name'].value;
     const email = document.forms['myform']['email'].value;
