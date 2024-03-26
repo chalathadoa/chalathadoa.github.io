@@ -43,10 +43,10 @@ nav {
     font-weight: 400;
     font-style: normal;
     padding: 5px;
-    border: 2px solid #000000; /* Menambahkan border */
+    border: 2px solid #000000;
     border-radius: 0%;
-    display: inline-block; /* Agar border bisa menyesuaikan lebar text */
-    margin: 0 px; /* Mengompensasi border agar tidak memperlebar lebar teks */
+    display: inline-block;
+    margin: 0 px;
     margin-right: -5px;
 }
 
@@ -118,15 +118,15 @@ header h3 {
 
 .review-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Membagi container menjadi dua kolom */
-    gap: 12%; /* Jarak antara elemen-elemen */
+    grid-template-columns: 1fr 1fr;
+    gap: 12%;
 }
 
 .review img {
     display: block;
-    margin: 0 auto; /* Membuat gambar berada di tengah */
-    max-width: 100%; /* Memastikan gambar tidak melebihi lebar bagian kiri */
-    width: 700px; /* Menjaga proporsi gambar */
+    margin: 0 auto;
+    max-width: 100%;
+    width: 700px;
     border-radius: 20px;
 }
 
@@ -155,12 +155,11 @@ header h3 {
     margin-right: 20px;
 }
 
-/* CSS Grid untuk menyusun nama dan umur dalam satu baris */
 .name-age {
     display: grid;
-    grid-template-rows: auto auto; /* Membagi baris menjadi dua */
-    justify-items: center; /* Memusatkan konten di baris */
-    gap: 5px; /* Jarak antar baris */
+    grid-template-rows: auto auto;
+    justify-items: center;
+    gap: 5px;
 }
 
 .name {
@@ -253,7 +252,7 @@ header h3 {
 }
 
 .info li img {
-    width: 50px; /* Sesuaikan ukuran gambar mini sesuai kebutuhan */
+    width: 50px;
     height: 50px;
     margin-right: 5%;
 }
@@ -373,7 +372,7 @@ section header h5{
 @media (max-width: 767px) {
 
     header {
-        padding-top: 100px; /* Menyesuaikan padding header di perangkat mobile */
+        padding-top: 100px;
     }
 
     .logo {
@@ -381,12 +380,12 @@ section header h5{
     }
 
     .main-content {
-        flex-direction: column; /* Mengubah tata letak main-content menjadi satu kolom di perangkat mobile */
+        flex-direction: column;
     }
 
     .left-content,
     .right-content {
-        width: 100%; /* Mengubah lebar left-content dan right-content menjadi 100% di perangkat mobile */
+        width: 100%;
     }
 
     .left-content {
