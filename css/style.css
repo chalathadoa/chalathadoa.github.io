@@ -309,7 +309,7 @@ header h3 {
     margin-top: 50px;
 }
 
-.btn button {
+.btn a {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -326,15 +326,17 @@ header h3 {
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
+    text-decoration: none;
 }
 
-.btn button i {
+.btn a i {
     margin-right: 10px;
 }
 
-.btn button:hover {
+.btn a:hover {
     background-color: #34495E;
     color: white;
+    text-decoration: none;
 }
 /* END CALL ME */
 
