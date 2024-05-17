@@ -1,5 +1,4 @@
 // script slides
-
 const reviews = document.querySelectorAll('.review');
 let currentSlide = 0;
 

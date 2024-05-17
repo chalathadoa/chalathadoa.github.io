@@ -8,223 +8,95 @@
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Assignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Nunito+Sans:opsz,wdth,wght@6..12,125,700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>Udkhul Rogodan||Web Developer</title>
 </head>
 <body>
+    <!-- start nav -->
     <nav>
         <div class="logo">
-            <h2 class="logo">Catventure Co.</h2>
+            <h2 class="logo">Udkhul Rogodan</h2>
         </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#callus">Call Us</a></li>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#callme">Contact Me</a></li>
         </ul>
     </nav>
-    <section class="content" id="home">
+    <!-- end nav -->
+
+    <!-- start home -->
+    <section class="home" id="home">
         <header>
-            <h1>Catventure Co.</h1>
-            <h3>Exploring the World, One Paw at a Time</h3>
-        </header>
-        <div class="main-content">
-            <div class="left-content">
-                <div class="review">
-                    <img src="assets/egypt.jpg" title="https://pin.it/6eKQmHU9r">
-                    <h4>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</h4>
-                    <table class="profile-info">
-                        <tr>
-                            <td rowspan="2" class="profile-picture">
-                                <img src="assets/person-1.jpg" title="https://pin.it/5gHUTmJZZ">
-                            </td>
-                            <td class="name">Florence Huges</td>
-                        </tr>
-                        <tr>
-                            <td class="age">Developer, 28</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="review">
-                    <img src="assets/cool.jpg" title="https://pin.it/6eKQmHU9r">
-                    <h4>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</h4>
-                    <table class="profile-info">
-                        <tr>
-                            <td rowspan="2" class="profile-picture">
-                                <img src="assets/person-2.jpg" title="https://pin.it/HJdZffmU0">
-                            </td>
-                            <td class="name">Clara Davis</td>
-                        </tr>
-                        <tr>
-                            <td class="age">Model, 17</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="review">
-                    <img src="assets/moun.jpg" title="https://pin.it/3GWXywLNo">
-                    <h4>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</h4>
-                    <table class="profile-info">
-                        <tr>
-                            <td rowspan="2" class="profile-picture">
-                                <img src="assets/person-3.jpg" title="https://pin.it/5XCiZmDIt">
-                            </td>
-                            <td class="name">Ethan Nelson</td>
-                        </tr>
-                        <tr>
-                            <td class="age">Designer, 41</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="review">
-                    <img src="assets/wall.jpg" title="https://pin.it/xryUaJeUg">
-                    <h4>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</h4>
-                    <table class="profile-info">
-                        <tr>
-                            <td rowspan="2" class="profile-picture">
-                                <img src="assets/person-4.jpg" title="https://pin.it/1zgwUKgqv">
-                            </td>
-                            <td class="name">Sophia Thompson</td>
-                        </tr>
-                        <tr>
-                            <td class="age">Marketing Manager, 28</td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="profil col">
+                <h1>Udkhul Roghodan</h1>
+                <h2>Web Developer || S1 Informatics Engineering</h2>
+                <h3>"Always, I don't believe in talent.<br>Talent is when your achievements SPEAK LOUDER<br>than the sweats behind them."</h3>
             </div>
-            <div class="right-content" id="contact">
-                <h3>Contact Us</h3>
-                <h5>Our team will be in touch with you after you fill this form.</h5>
-                <form action="#" name="myform" method="post" onsubmit="return validateForm()">
-                    <label for="name">Your Name:</label><br>
-                    <input type="text" id="name" name="name" placeholder="First and last name"><br>
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" placeholder="example@email.com"><br>
-                    <label for="product">What are you interested in?</label><br>
-                    <select id="product" name="product">
-                        <option value="">---- Choose Our Product ----</option>
-                        <option value="Meow-nificent Egypt Adventure">Meow-nificent Egypt Adventure</option>
-                        <option value="Paw-some Package to Paris">Paw-some Package to Paris</option>
-                        <option value="Whisker Wanderlust Tour">Whisker Wanderlust Tour</option>
-                        <option value="Purrfect Pet Hotel">Purrfect Pet Hotel</option>
-                        <option value="Catnip Cruise">Catnip Cruise</option>
-                        <option value="Kitty Commuter Backpack">Kitty Commuter Backpack</option>
-                    </select>
-                    <input class="submit" type="submit" value="Submit">
-                </form>
-            </div>
-        </div>
-        <div class="info">
-            <h3>Use this space to provide users with more information about your offer. Consider it a followw-up to your headline and explain the benefits of your service or product</h3>
-            <ul>
-                <li>
-                    <img src="assets/one.png" title="https://www.flaticon.com/authors/riajulislam">
-                    <span class="product-name">Your first feature, written in the form of a benefit statement.</span>
-                </li>
-                <li>
-                    <img src="assets/two.png" title="https://www.flaticon.com/authors/rashedulislam">
-                    <span class="product-name">Your second feature, written in the form of a benefit statement.</span>
-                </li>
-                <li>
-                    <img src="assets/three.png" title="https://www.flaticon.com/authors/shuvodas">
-                    <span class="product-name">Your third feature, written in the form of a benefit statement.</span>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="our" id="about">
-        <header>
-            <h1 class="title-pack">Our Packages</h1>
+            <img src="assets/lkb.jpeg" class="foto" alt="">
         </header>
     </section>
-    <section class="package">
-        <div class="package-grid">
-            <table class="package-item">
-                <tr>
-                    <td rowspan="2" class="lamp">
-                        <img src="assets/egypt.png" title="https://www.flaticon.com/free-icons/egypt">
-                    </td>
-                    <td class="place">Meow-nificent Egypt Adventure</td>
-                </tr>
-                <tr>
-                    <td class="desc">Set sail on a meow-nificent Egypt adventure and discover the beauty of the Egypt coastline with your cat by your side.</td>
-                </tr>
-            </table>
-            <table class="package-item">
-                <tr>
-                    <td rowspan="2" class="lamp">
-                        <img src="assets/paris.png" title="https://www.flaticon.com/free-icons/france">
-                    </td>
-                    <td class="place">Paw Some Package to Paris</td>
-                </tr>
-                <tr>
-                    <td class="desc">Your cat will explore iconic landmarks like the Eiffel Tower and enjoy luxurious accommodations in cat-friendly hotels</td>
-                </tr>
-            </table>
-            <table class="package-item">
-                <tr>
-                    <td rowspan="2" class="lamp">
-                        <img src="assets/tour.png" title="https://www.flaticon.com/free-icons/travel">
-                    </td>
-                    <td class="place">Whisker Wanderlust Tour</td>
-                </tr>
-                <tr>
-                    <td class="desc">With expert guides and cat-centric itineraries, your cat will meow with excitement as they explore new sights and sounds.</td>
-                </tr>
-            </table>
-            <table class="package-item">
-                <tr>
-                    <td rowspan="2" class="lamp">
-                        <img src="assets/hotel.png" title="https://www.flaticon.com/free-icons/pets-allowed">
-                    </td>
-                    <td class="place">Purrfect Pet Hotel</td>
-                </tr>
-                <tr>
-                    <td class="desc">Our boutique hotel offers spacious suites, cozy bedding, and round-the-clock concierge service to cater to your cat's every need.</td>
-                </tr>
-            </table>
-            <table class="package-item">
-                <tr>
-                    <td rowspan="2" class="lamp">
-                        <img src="assets/cruise.png" title="https://www.flaticon.com/free-icons/ship">
-                    </td>
-                    <td class="place">Catnip Cruise</td>
-                </tr>
-                <tr>
-                    <td class="desc">Set sail on a Catnip Cruise and embark on a nautical adventure with your cat! We're promises a tail-wagging experience for all.</td>
-                </tr>
-            </table>
-            <table class="package-item">
-                <tr>
-                    <td rowspan="2" class="lamp">
-                        <img src="assets/backpack.png" title="https://www.flaticon.com/free-icons/pet-supplies">
-                    </td>
-                    <td class="place">Kitty Commuter Backpack</td>
-                </tr>
-                <tr>
-                    <td class="desc">Featuring a breathable mesh design and comfortable padded straps, this backpack allows your cat to accompany you on daily adventures or weekend getaways in style. </td>
-                </tr>
-            </table>
+    <!-- end home -->
+
+    <!-- start about me -->
+    <section id="about-me">
+        <div class="main-abt">
+            <div class="abt-left">
+                <h2>About Me</h2>
+                <h4>WHO AM I</h4>
+            </div>
+            <div class="abt-middle">
+                <p>Hello! I'm Udkul Roghodan, a fresh graduate in Computer Science with a strong passion for web development. My journey into the tech world began with a deep curiosity about how websites are built, which quickly turned into a passion for creating user-friendly and functional web applications. During my studies and internships, I honed my skills in HTML, CSS, JavaScript, and frameworks such as Codeigniter, gaining a solid foundation in both front-end and back-end development.</p>
+
+            </div>
+            <div class="abt-right">
+                <p>My project experience includes designing user interfaces during my internship, building a company-profile website, and developing a comprehensive information system for a Muslimah dormitory as my biggest project so far. This dormitory project involved creating a system with five different user roles and implementing QR code for attendance, providing me with a real experience in creating practical, user-friendly solutions. I'm eager to continue growing my skills and take on new challenges in web development.</p>
+            </div>
         </div>
-    </section><hr>
-    <section class="cta" id="callus">
-        <header>
-            <h1>Pawsitively Purr-fect Journeys Await You</h1>
-            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h5>
-        </header>
+    </section>
+    <!-- end about me -->
+
+    <!-- start projects -->
+    <section class="projects" id="projects">
+        <h4>PORTOFOLIO</h4>
+        <h2>Projects</h2>
+        <h5>Welcome to the playground of innovation and creativity.<br>Here's my showcase of projects, each providing a glimpse into the craftsmanship behind every digital creation</h5>
+        <div class="list">
+            <div class="card">
+                <img src="assets/design.png" alt="Project 1">
+                <h3>UI Design: Pharmacy Website</h3>
+                <p>In the end of 2022, I took part in an internship at a company called Disty Teknologi Indonesia as a Web Developer where the final project was to build a website for pharmacists to sell medicine. My role in this project was as a UI designer and front-end developer. The website has 2 roles admin and the pharmacist. It's a non-register website, so the pharmacist account will be added from admin. I've learn a lot designing UI for website in this project. <a href="https://www.figma.com/design/5BlCdHDnI9fOGWODvIG18H/FP_Disty_Apotik?t=A6hotJewjjIyfZD0-1" target="_blank">Here's my UI design for the project.</a> I also have some UI design for android app for my PKM, <a href="https://www.figma.com/proto/DjLBmVWKML1VIiTmqA1L2n/go-eco?node-id=4-0&t=MSmiCjAfUrOSIEKl-1" target="_blank">Here it is.</a></p>
+            </div>
+            <div class="card">
+                <img src="assets/coding.png" alt="Project 2">
+                <h3>Develop System Information Website</h3>
+                <p>I build a system information website for my thesis. The web has 5 different roles and multi-features such managing users, events, assesment report, classes, qr-attendance, etc. The website also implement data mining through student's classification using DTRee Algorithm. I learned a lot from building this website. When our efforts hit a dead end or encounter errors, it doesn't mean we come up empty-handed, at the very least, we discover that path was the wrong one. <a href="https://endeavor.my.id" target="_blank">Here's the link.</a> And feel free to contact me if you wanna see the detail.</p>
+            </div>
+            <div class="card">
+                <img src="assets/company.png" alt="Project 1">
+                <h3>Create Company Profile Website</h3>
+                <p>In my free time, I took a web development course by RevoU. The final project of this course was to build a company profile website with a predetermined wireframe. We could modify the website as long as it had the same content that had been determined. I built this website with pure HTML, CSS, and JavaScript, without using any libraries or frameworks. This project helped me deepen my understanding of front-end development and reinforced my ability to create responsive, user-friendly web pages from scratch. <a href="https://chalathadoa.github.io/RevoU/">Here's my exciting creation.</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- end projects -->
+
+    <section class="callme" id="callme">
+        <h4>CONTACT ME</h4>
+        <h2>Ways To Contact Me</h2>
+        <h5>Looking forward to hearing from you!<br>Feel free to drop me an email or connect with me on social media! Here are the best ways to get in touch.</h5>
         <div class="btn">
-            <button href="#contact" type="submit">CALL TO ACTION</button>
+            <button href="mailto:udkhul.roghodan7@gmail.com?subject=Contact-Portofolio&body=Halo,%0ASaya ingin..."><i class="fa-regular fa-envelope-open"></i> Email Me</button>
+            <button href="https://wa.me/6285755805071?text=Halo,%20saya%20ingin%20..."><i class="fa-brands fa-whatsapp"></i> Whatsapp Me</button>
+            <button href="https://www.instagram.com/chalathadoa"><i class="fa-brands fa-instagram"></i> My Instagram</button>
+            <button href="https://www.linkedin.com/in/udkhul-rogodan-chalatha-doa-ab814620a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i> My LinkedIn</button>
         </div>
     </section><hr>
     <section class="footer">
-        <h2>Catventure Co.</h2>
-        <div class="footer-bottom">
-            <span class="tos">Terms of Service</span>
-            <span>Privacy Policy</span>
-        </div>
-        <div class="footer-bottom">
-            <a class="tos" href="https://www.instagram.com/chalathadoa?igsh=MWpkYWdud3Fnc3k3eQ==" target="_blank">Catventure &copy; 2024</a>
-            <span>All Rights Reserved</span>
-        </div>
-        <div class="tamat"></div>
+        <span><a href="https://www.instagram.com/chalathadoa?igsh=MWpkYWdud3Fnc3k3eQ==" target="_blank">&copy; Udkhul Roghodan 2024</a> | All Rights Reserved</span>
     </section>
     <!-- script JS -->
     <script src="js/script.js"></script>
