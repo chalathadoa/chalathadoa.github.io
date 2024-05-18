@@ -284,6 +284,9 @@ header h3 {
     color: #34495E;
 }
 
+.callme h2 br {
+    display: none;
+}
 .callme h4 {
     margin-top: -80px;
 }
@@ -371,66 +374,136 @@ hr {
 @media (max-width: 767px) {
 
     header {
-        padding-top: 100px;
+        padding-top: 200px;
     }
 
     .logo {
-        width: 30%;
+        font-size: 15px;
+    }
+    .nav-links {
+        margin-left: 20px;
+        justify-content: center;
     }
 
-    .main-content {
-        flex-direction: column; 
+    .home h1 {
+        font-size: 40px;
+        margin-top: -120px;
+        width: 50%;
+        margin-left: -15px;
+        line-height: 35px;
     }
 
-    .left-content,
-    .right-content {
-        width: 100%; 
+    .home h2 {
+        margin-top: -20px;
+        font-size: 18px;
+        margin-left: -15px;
+        line-height: 20px;
     }
 
-    .left-content {
-        margin-bottom: 50px;
+    .home h3 {
+        font-size: 12px;
+        margin-top: 35px;
+        width: 60%;
+        margin-left: -15px;
+        line-height: 20px;
     }
 
-    .submit{
-        margin-bottom: 40px;
+    .home h3 br {
+        display: none;
     }
 
-    .info {
+    .home img {
+        width: 25%;
+        margin-top: -130px;
+        margin-left: 60%;
+    }
+
+    .main-abt {
+        display: block;
+        text-align: center;
+        margin-top: -40%;
+    }
+
+    .abt-left, .abt-middle, .abt-right {
+        margin: 20px 0;
         width: 100%;
     }
 
-    .package-grid{
-        grid-template-columns: repeat(1, 1fr);
+    .abt-left h4 {
+        margin-top: -10px;
     }
 
-    section header h5{
-        margin-left: 10%;
-        margin-right: 10%;
+    .projects h4 {
+        margin-top: 5px;
     }
 
-    .footer h2{
-        font-family: "Caveat Brush", cursive;
-        font-weight: 400;
-        font-style: normal;
-        margin-left: 35%;
+    .projects h2 {
+        margin-top: -10px;
     }
 
-    .footer-bottom{
+    .projects br {
+        display: none;
+    }
+
+    .projects h5 {
         text-align: center;
-    }
-    .footer-bottom span {
-        margin-right: 5px;
-        font-size: 14px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        color: #616161;
-    }
-    .tos{
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: -20px;
     }
 
-    .tamat{
-        margin-bottom: 10%;
+    .list {
+        display: block;
+        align-items: center;
+    }
+
+    .card {
+        margin-left: -20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .callme h4 {
+        margin-top: 5px;
+    }
+
+    .callme h2 {
+        margin-top: -10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .callme h2 br {
+        display: block;
+    }
+
+    .callme h5 br {
+        display: none;
+    }
+
+    .callme h5 {
+        margin-top: -20px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .callme .btn {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 10%;
+    }
+    
+    .callme .btn a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 5px;
+        width: 80%;
+    }
+    
+    .callme .btn a i {
+        margin-right: 5px;
     }
 }
