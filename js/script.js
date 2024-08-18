@@ -1,36 +1,40 @@
 // script slides
-const reviews = document.querySelectorAll('.review');
+const cards = document.querySelectorAll('.card');
 let currentSlide = 0;
 
 showSlide(currentSlide);
 
 function showSlide(currentSlide) {
-    reviews.forEach(review => {
-        review.style.display = 'none';
+    cards.forEach(card => {
+        card.style.display = 'none';
     });
-    reviews[currentSlide].style.display = 'block';
+    cards[currentSlide].style.display = 'block';
 }
 
 function autoSlide() {
     currentSlide++;
-    if (currentSlide >= reviews.length) {
+    if (currentSlide >= cards.length) {
         currentSlide = 0;
     }
     showSlide(currentSlide);
 }
-setInterval(autoSlide, 3000);
+setInterval(autoSlide, 30000);
 
-// script validasi
-function validateForm(){
-    const name = document.forms['myform']['name'].value;
-    const email = document.forms['myform']['email'].value;
-    const product = document.forms['myform']['product'].value;
-
-    if(name == "" || email == "" || product == ""){
-        alert("Please fill out all fields!");
-        return false;
+function prevSlide() {
+    currentSlide--;
+    if (currentSlide < 0) {
+        currentSlide = cards.length - 1;
     }
-    var modalMsg = "Dear " + name + ",\n\nThank you for choosing " + product + ". Our team will be in touch with you within 24 hours.\n\nBest regards,\nThe Catventure Co. Team";
-    alert(modalMsg);
-    return false;
+    showSlide(currentSlide);
 }
+
+function nextSlide() {
+    currentSlide++;
+    if (currentSlide >= cards.length) {
+        currentSlide = 0;
+    }
+    showSlide(currentSlide);
+}
+
+document.getElementById('prevBtn').addEventListener('click', prevSlide);
+document.getElementById('nextBtn').addEventListener('click', nextSlide);
