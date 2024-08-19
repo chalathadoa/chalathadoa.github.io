@@ -11,14 +11,14 @@ function showSlide(currentSlide) {
     cards[currentSlide].style.display = 'block';
 }
 
-function autoSlide() {
-    currentSlide++;
-    if (currentSlide >= cards.length) {
-        currentSlide = 0;
-    }
-    showSlide(currentSlide);
-}
-setInterval(autoSlide, 30000);
+// function autoSlide() {
+//     currentSlide++;
+//     if (currentSlide >= cards.length) {
+//         currentSlide = 0;
+//     }
+//     showSlide(currentSlide);
+// }
+// setInterval(autoSlide, 30000);
 
 function prevSlide() {
     currentSlide--;
